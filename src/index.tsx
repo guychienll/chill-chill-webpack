@@ -5,4 +5,8 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-root.render(<h1>Hello, world!</h1>);
+const App = () => {
+  return <h1>Hello, Webpack!</h1>;
+};
+
+root.render(<App />);
