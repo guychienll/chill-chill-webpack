@@ -1,12 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-
-const App = () => {
-  return <h1>Hello, Webpack!</h1>;
+const obj = {
+  name: "John",
+  age: 30,
 };
 
-root.render(<App />);
+const sayHello = (name: string) => {
+  console.log(`Hello, ${name}!`);
+};
+
+sayHello(obj.name);
